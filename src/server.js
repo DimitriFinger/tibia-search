@@ -6,6 +6,6 @@ app.listen(8080, () => {
 });
 
 
-const data = await SearchChar.searchChar('Aberoon Grooup')
-console.log(data)
+const response = await SearchChar.searchChar('Dime Vanillia')
+console.log(response.data.characters.character.name)
 
