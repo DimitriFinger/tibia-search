@@ -1,5 +1,5 @@
 import assert from "assert"
-import { describe, it } from "mocha"
+import { describe, it } from 'mocha'
 import SearchChar from '../services/searchChar.js'
 
 describe('API Tests', () => {
