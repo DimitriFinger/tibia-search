@@ -43,7 +43,7 @@ jobs:
           file: ./src/Dockerfile
           push: true
           tags: |
-            dimitrifinger/tibia-search:${{git.run_number}}.0
+            dimitrifinger/tibia-search:${{github.run_number}}.0
             dimitrifinger/tibia-search:latest
         
  
