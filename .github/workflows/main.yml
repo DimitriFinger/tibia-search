@@ -29,5 +29,15 @@ jobs:
         run: |
           cd src;
           npm test;
+      
+      - name: Build docker image
+        uses: docker/build-push-action@v4.1.1
+        with:
+          context: src
+          file: src/Dockerfile
+          push: true
+          tags: |
+            dimitrifinger/tibia-search:v1
+            dimitrifinger/tibia-search:latest
         
  
