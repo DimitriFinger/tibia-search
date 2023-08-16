@@ -29,6 +29,12 @@ jobs:
         run: |
           cd src;
           npm test;
+
+      - name: Docker Login
+        uses: docker/login-action@v2.2.0
+        with:
+          username:  ${{secrets.ID_DOCKERHUB}}
+          password:  ${{secrets.PWD_DOCKERHUB}}
       
       - name: Build docker image
         uses: docker/build-push-action@v4.1.1
