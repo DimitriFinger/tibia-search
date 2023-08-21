@@ -12,6 +12,7 @@ class App {
     middlewares() {
         this.server.use(express.json());
         this.server.use(cors());
+        this.server.set('view engine', 'ejs');
     }
 
     routes() {
