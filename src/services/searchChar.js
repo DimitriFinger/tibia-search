@@ -10,7 +10,7 @@ class SearchChar {
         const newURL = 'https://api.tibiadata.com/v3/character/' + newNickname;
 
 
-        await axios.get(newURL).then(response => this.charData = response.data)
+        await axios.get(newURL).then(response => this.charData = response)
 
         if (this.charData.length === 0)
             return "Erro! Personagem não encontrado!"
